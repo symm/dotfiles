@@ -1,0 +1,13 @@
+startup_message off
+shell zsh
+vbell off
+defutf8 on
+
+hardstatus off
+hardstatus alwayslastline
+hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f %t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %Y-%m-%d %{W}%c %{g}]'
+
+term screen-256color
+altscreen on
+
+termcapinfo xterm* ti@:te@
