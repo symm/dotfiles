@@ -1,0 +1,36 @@
+## VIDEO
+vo=vdpau,xv
+
+## AUDIO
+channels=2
+# use software mixer instead of sound card
+softvol = 1
+ao=pulse
+alang=jp,en
+autosync=30
+
+## SUBS
+slang=en,und
+# only display DVD subs if mandatory
+forcedsubsonly=1
+# uncompress packed subs
+unrarexec=/usr/bin/unrar
+# delicious fansub
+ass=1
+# use ass for OSD fonts too
+fontconfig=1
+embeddedfonts=1
+font="Deja Vu Sans"
+subfont="Arial Black"
+subfont-text-scale=7
+ass-border-color=00000000
+ass-color=FFFFFF00
+
+
+## MISC
+cache=8912
+quiet=1
+#msglevel=all=1
+#msgcolor=1
+stop-xscreensaver=1
+heartbeat-cmd="gnome-screensaver-command -p"
