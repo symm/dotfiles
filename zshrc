@@ -43,6 +43,8 @@ alias -g M='|more'
 alias -g H='|head'
 alias -g T='|tail'
 
+alias less='less -R'
+
 alias 360burn='sudo growisofs -use-the-force-luke=dao -use-the-force-luke=break:1913760 -dvd-compat -speed=2 -Z'
 alias 360check='abgx360 -v -pw --rgn 00FE0000 --splitvid '
 alias 360verify='abgx360 -v -pw --rgn 00FE0000 --splitvid -- "/dev/dvd"'
