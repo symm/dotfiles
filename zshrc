@@ -45,7 +45,8 @@ alias -g T='|tail'
 
 alias less='less -R'
 
-alias 360burn='sudo growisofs -use-the-force-luke=dao -use-the-force-luke=break:1913760 -dvd-compat -speed=2 -Z'
+#alias 360burn='sudo growisofs -use-the-force-luke=dao -use-the-force-luke=break:1913760 -dvd-compat -speed=2 -Z'
+alias 360burn='sudo growisofs -use-the-force-luke=dao -use-the-force-luke=break:1913760 -dvd-compat -Z'
 alias 360check='abgx360 -v -pw --rgn 00FE0000 --splitvid '
 alias 360verify='abgx360 -v -pw --rgn 00FE0000 --splitvid -- "/dev/dvd"'
 # ArCOSS protected DVD Ripping
@@ -85,11 +86,10 @@ alias mv="mv -i"
 alias ps="ps -fU`whoami`"
 alias suids="find / -perm -4000"
 alias sgids="find / -perm -2000"
-alias fix-files="find . -type f -exec chmod 644 '{}' \; -print"
-alias fix-dirs="find . -type d -exec chmod 755 '{}' \; -print"
+alias fix-files="sudo find . -type f -exec chmod 644 '{}' \; -print"
+alias fix-dirs="sudo find . -type d -exec chmod 755 '{}' \; -print"
 alias netview="watch netstat -n --inet"
 alias diff="colordiff"
-alias wget='wget --user-agent "Mozilla/5.0"'
 
 # UTF-8 PuTTY
 echo -ne '\e%G\e[?47h\e%G\e[?47l'
