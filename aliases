@@ -23,4 +23,38 @@ alias -g L='| wc -l'
 alias -g ONE="| awk '{ print \$1}'"
 alias untar='tar -xvf'
 alias df="df -h"
-alias aptitude="sudo aptitude"
+
+# APT/DPG
+alias search='apt-cache search'
+alias show='apt-cache show'
+alias sinstall='sudo aptitude install'
+alias ssearch='sudo aptitude search'
+alias supgrade='sudo aptitude update && sudo aptitude dist-upgrade'
+alias supurge='sudo aptitude remove --purge'
+alias fsearch='apt-file search'
+alias fupdate='sudo apt-file update -v'
+
+alias fix-files="sudo find . -type f -exec chmod 644 '{}' \; -print"
+alias fix-dirs="sudo find . -type d -exec chmod 755 '{}' \; -print"
+alias get-composer="curl -s https://getcomposer.org/installer | php"
+alias dd="dcfldd"
+alias buspirate="screen /dev/ttyUSB0 115200"
+
+alias 360burn='sudo growisofs -use-the-force-luke=dao -use-the-force-luke=break:1913760 -dvd-compat -Z'
+alias 360check='abgx360 -v -pw --rgn 00FE0000 --splitvid '
+alias 360verify='abgx360 -v -pw --rgn 00FE0000 --splitvid -- "/dev/dvd"'
+alias ArCOSS-rip='ddrescue -n -b 2048 /dev/dvd '
+alias burn='cdrecord -v -overburn -eject dev=/dev/dvd driveropts=burnfree'
+alias dos-convert='"vim +"set ff=unix" +wq '
+alias dvbtv="mplayer -cache 8192 -vf pp=lb -autosync 30"
+
+# Crypto stuff
+alias cs="sudo cryptsetup -c aes-xts-plain -s 256 -h whirlpool"
+alias gpgc="gpg -c --cipher-algo AES"
+alias shred1="shred -uv -n0 -z"
+alias wipe1="wipe -F -Q1 -q -R /dev/zero"
+alias loop-aes-keygen='loop-aes-keygen -c twofish'
+alias genkey='dd if=/dev/urandom bs=1 count=512'
+
+alias pfu="ps -fU`whoami`"
+alias nlp="netstat -nlp"
