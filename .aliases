@@ -1,0 +1,5 @@
+alias gdb="gdb -quiet"
+alias untar='tar -xvf'
+alias fix-files="sudo find . -type f -exec chmod 644 '{}' \; -print"
+alias fix-dirs="sudo find . -type d -exec chmod 755 '{}' \; -print"
+alias pfu="ps -fU`whoami`"
