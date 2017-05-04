@@ -6,3 +6,9 @@ export PATH="$(brew --prefix homebrew/php/php71)/bin:$PATH"
 
 
 export PATH="$GOBIN:$PATH"
+
+export EDITOR="vim"
+
+if [ -e "$HOME/.aliases" ]; then
+  source "$HOME/.aliases"
+fi
