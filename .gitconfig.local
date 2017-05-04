@@ -1,2 +1,6 @@
+; To make use of these, add the following to ~/.gitconfig
+;[include]
+;    path = ~/.gitconfig.local
+
 [alias]
 	yolo = !git commit -m \"$(curl -s whatthecommit.com/index.txt)\"
