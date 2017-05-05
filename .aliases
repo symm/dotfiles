@@ -21,3 +21,10 @@ alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && k
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 
 alias gundo="git reset HEAD~1"
+alias git-nuke="git reset FETCH_HEAD —hard"
+
+alias terrorform=terraform
+alias yagni=rm
+
+alias proxy="source ~/.proxy"
+alias noproxy="source ~/.noproxy"
